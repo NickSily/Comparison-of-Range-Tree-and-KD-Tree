@@ -1,0 +1,6 @@
+[submodule "RangeTree"]
+	path = RangeTree
+	url = https://github.com/NickSily/RangeTree.git
+[submodule "KdTree"]
+	path = KdTree
+	url = https://github.com/NickSily/KdTree.git
