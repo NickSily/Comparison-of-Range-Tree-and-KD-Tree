@@ -9,10 +9,12 @@
 #include <iomanip>
 #include <functional>
 #include <cmath>
+#include "../KdTree/src/KdTree.h"
+#include "../RangeTree/src/RangeTree.h"
 
-// Include KDTree and RangeTree headers
-#include "../KdTree/KDTree.h"
-#include "../RangeTree/RangeTree.h"
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 
 // Timer utility for benchmarking
 class Timer
