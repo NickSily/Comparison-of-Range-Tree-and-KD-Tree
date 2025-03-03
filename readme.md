@@ -1,6 +1,6 @@
 # KD Tree vs Range Tree Benchmark
 
-This benchmark provides a comprehensive comparison between KD Tree and Range Tree data structures across various datasets, sizes, and operations. The analysis helps determine which spatial data structure is more suitable for different scenarios and applications.
+This benchmark provides a  comparison between KD Tree and Range Tree data structures across various datasets, sizes, and operations. The analysis helps determine which spatial data structure is more suitable for different scenarios and applications.
 
 ## Data Structures Overview
 
@@ -24,15 +24,15 @@ The benchmark evaluates performance across:
 
 The benchmark tests five different point distributions to simulate various real-world scenarios:
 
-1. **Uniform Random Distribution**: Points are randomly distributed throughout the entire space with equal probability. This creates an unpredictable, evenly spread pattern that represents general-case scenarios with no specific structure.
+1. **Uniform Random Distribution**: Points are randomly distributed throughout the entire space with equal probability. Thus creating an evenly spread pattern that represents general-case scenarios with no specific structure.
 
 2. **Gaussian Distribution**: Points are clustered around a central location (mean) with decreasing density as distance from center increases. This follows a normal distribution curve and simulates naturally occurring clusters found in many real-world datasets.
 
 3. **Grid Distribution**: Points are arranged in a regular, evenly-spaced grid pattern. This highly structured arrangement tests performance with perfectly organized data and predictable spacing between points.
 
-4. **Circle Distribution**: Points are arranged along the circumference of a circle (in 2D) or a spherical surface (conceptually, in higher dimensions). This represents a convex arrangement where points form a boundary around empty space.
+4. **Circle Distribution**: Points are arranged along the circumference of a circle (in 2D) or a spherical surface (conceptually, in higher dimensions). This represents a convex arrangement (Convex Hull) where points form a boundary around empty space.
 
-5. **Skewed Distribution**: 80% of points are concentrated in a small region of the space, with the remaining 20% scattered throughout. This tests performance with highly imbalanced data distributions that contain dense clusters and sparse regions.
+5. **Skewed Distribution**: 80% of points concentrated in a small region of the space, with the remaining 20% scattered. Testign performance with highly imbalanced data distributions.
 
 ## Key Findings
 
@@ -66,7 +66,6 @@ The benchmark tests five different point distributions to simulate various real-
   - Construction speed is important
   - Point searches and nearest neighbor queries are the primary operations
   - Memory usage is a concern
-  - Working primarily with low-dimensional data
 
 - **Use Range Tree when**:
   - Range queries are the dominant operation
@@ -110,8 +109,7 @@ Machine Code files
 Source files ( .cpp and .h or .hpp)
 
 ## test-unit
-Cache Test Module for testing. Test early and often kids!
-
+Cache Test Module for testing. Test early and often!
 ## Makefile
 To run Program Type "make" in Linux terminal
 To run test type "make test" in Terminal
